@@ -1,0 +1,135 @@
+/** {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}*/
+
+body {
+	background-color: #f1efe8;
+	text-align: center;
+
+}
+
+h1 {
+	font-family: "Brush Script MT";
+}
+
+article {
+	word-wrap: break-word;
+}
+
+hr {
+	border: none; 
+    width: 40%;
+    border-top: 0.32rem dotted;
+    margin: 4% auto;
+}
+
+.first-line {
+	margin-top: 8%;
+}
+
+.port{
+	margin-bottom: 7%;
+}
+
+.portfolio img {
+	border-radius: 10%;
+	box-shadow: 0.32rem 0.32rem 0.32rem #64412b;
+}
+
+.port-container {
+	display: block;
+}
+
+.portfolio button {
+	width: 7em;
+	height: 4em;
+	margin-top: 8%;
+	margin-bottom: 8%;
+	font-family: "Courier New";
+	background-color: #855E3F;
+	color: ghostwhite;
+	border-radius: 10%;
+	box-shadow: 0.32rem 0.32rem 0.32rem #64412b;
+}
+
+.puzzle {
+	display: none;
+}
+
+.boards-container {
+	display: none;
+}
+
+#pieces {
+	display: none;
+}
+
+#board {
+	display: none;
+}
+
+#board img {
+	display: none;
+}
+
+#pieces img {
+	display: none;
+}
+
+ul {
+	text-align: left;
+	display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+	.portfolio {
+		display: flex;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.puzzle {
+		display: block;
+	}
+
+	.boards-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#pieces {
+		width: 263.5px;
+		height: 516.5px;
+		border: 2px solid purple;
+
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#board {
+		width: 263.5px;
+		height: 516.5px;
+		border: 2px solid purple;
+
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#board img {
+		display: block;
+		width: 85.6px;
+		height: 101.4px;
+		border: 0.5px solid lightgrey;
+	}
+
+	#pieces img {
+		display: block;
+		width: 85.6px;
+		height: 101.4px;
+		border: 0.5px solid lightgrey;
+	}
+}
